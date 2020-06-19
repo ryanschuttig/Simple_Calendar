@@ -14,8 +14,6 @@ Display current times with Moment.js
 Moment() gives you current time
 Compare time on calendar to current moment in time
 
-&#128190;
-
 localStorage setItem, localStorage getItem -->
 
 05 Third-Party APIs: Work Day Scheduler

@@ -3,7 +3,7 @@ $("#currentDay").text(moment().format("dddd, MMM Do, YYYY"));
 // Supposed to color time blocks appropriately
 function timeColor() {
     const presentTime = moment().hours();
-    $(".textValue").each(function() {
+    $(".textValue").each(function () {
         const plannerRow = parseInt($(this).attr("id"));
         if (plannerRow < presentTime) {
             $(this).addClass("past");
@@ -27,7 +27,7 @@ $("#t15 .textValue").val(localStorage.getItem("t15"));
 $("#t16 .textValue").val(localStorage.getItem("t16"));
 $("#t17 .textValue").val(localStorage.getItem("t17"));
 // Button to save and store values
-$(".saveBtn").click(function() {
+$(".saveBtn").click(function () {
     var textValue = $(this).siblings(".textValue").val();
     var presentTime = $(this).parent().attr("id");
     localStorage.setItem(presentTime, textValue);
